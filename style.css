@@ -1,0 +1,154 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-section {
+    position: relative;
+    background-image: url('images.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.profile-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay transparan hitam */
+    z-index: 1;
+}
+
+.profile-section .container {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.profile-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.section-header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0f1317;
+    padding-bottom: 5px;
+    color: #323c44;
+    display: block; /* Ubah dari inline-block ke block */
+}
+
+/* Card Styling */
+.info-card {
+    background-color: #fff; 
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover transition */
+}
+
+.info-card:hover {
+    transform: translateY(-10px); /* move the card up slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* increase shadow for depth */
+}
+
+.info-card h5 {
+    color: #0f1317;
+}
+
+.table th, .table td {
+    color: #333;
+}
+
+.btn-custom {
+    background-color: #0f0201;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #333;
+}
+
+/* List Group Item */
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .section-header {
+        font-size: 1.5rem;
+    }
+
+    .info-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .btn-custom {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-header {
+        font-size: 1.2rem;
+    }
+
+    .info-card {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .btn-custom {
+        padding: 6px 15px;
+    }
+
+    .profile-section p {
+        padding: 10px;
+        display: block; /* Ubah dari inline-block ke block */
+        max-width: 100%; /* Ensure it adapts to screen size */
+        box-sizing: border-box; /* Include padding in element width */
+    }
+}
+
+/* Make the profile text more readable on small screens */
+.profile-section h2, .profile-section p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}

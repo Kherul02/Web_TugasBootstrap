@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaerul Hidayat Z.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="profile-section">
+        <div class="container text-center">
+            <img src="Herul.jpg" alt="Foto profil Khaerul Hidayat Z." class="profile-image">
+            <h2>Khaerul Hidayat Z.</h2>
+            <p>Mahasiwah di Kampus Universitas Negeri Makassar</p>
+            <p><strong>Motto:</strong> "Belajarlah meski pake tamplate"</p>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <h3 class="section-header text-center">Tentang Saya</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Informasi Pribadi</h5>
+                    <table class="table table-borderless">
+                        <tr>
+                            <th>Nim</th>
+                            <td>230209502079</td>
+                        </tr>
+                        <tr>
+                            <th>Kelas</th>
+                            <td>PTIK H</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>Jl. Tamalate 2 Tidung 6 setapak 12</td>
+                        </tr>
+                        <tr>
+                            <th>Sekolah Asal</th>
+                            <td>SMA Negeri 5 Sinjai</td>
+                        </tr>
+                        <tr>
+                            <th>Kampus</th>
+                            <td><a href="https://unm.ac.id/" target="_blank">Universitas Negeri Makassar</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Pertemuan 2 MK Pemrograman Web</h5>
+                    <p>Pada pertemuan kedua mata kuliah pemrograman web, kami ditugaskan untuk
+                        menjelaskan jenis-jenis tag pada HTML yang sebelumnya sudah dibagikan pada pertemuan sebelumnya.
+                        Kebetulan saya mendapatkan tag HTML yang lumayan mudah yaitu tag <code>&lt;time&gt;</code>.
+                        Tag ini digunakan untuk menjelaskan keterangan waktu tertentu dan dapat disertai atribut <code>datetime</code> untuk format yang dapat dibaca oleh mesin. Untungnya, tag ini dengan mudah saya pahami, jadi semua berjalan lancar.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Mata Kuliah yang Dipelajari</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Struktur Data</li>
+                        <li class="list-group-item">Pemrograman Web</li>
+                        <li class="list-group-item">Keamanan Komputer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-card">
+                    <h5>Daftar Dosen</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">M. Miftach Fakhri, S.kom., M.pd.</li>
+                        <li class="list-group-item">Alifyah NFH, S.pd., M.pd.</li>
+                        <li class="list-group-item">Aulyah Zakilah Ifani, M.kom.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-card mt-4">
+            <h5>Teman Dekat</h5>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Lengkap</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Alamat</th>
+                            <th>Asal Sekolah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Nur Hidayat </td>
+                            <td>Laki-laki</td>
+                            <td>Sinjai</td>
+                            <td>SMA Negeri 5 Sinjai</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>randi Gautama Al qudsi</td>
+                            <td>Laki-laki</td>
+                            <td>Makassar</td>
+                            <td>SMA Negeri 5 Sinjai</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Nur Alamsya</td>
+                            <td>Laki-laki</td>
+                            <td>Makassar</td>
+                            <td>SMA Negeri 5 Sinjai</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>M. Faiz</td>
+                            <td>Laki-laki</td>
+                            <td>Makassar</td>
+                            <td>SMA Negeri 5 Sinjai</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <button class="btn btn-custom" id="contactButton">Pesan buat Developer</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactButton').addEventListener('click', function() {
+            let message = prompt("Masukkan Pesan Anda");
+            if (message) {
+                alert("Pesan Terkirim");
+            } else {
+                alert("Anda tidak memasukkan pesan.");
+            }
+        });
+    </script>
+</body>
+</html>
